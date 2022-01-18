@@ -1,0 +1,1367 @@
+#services html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+#services body {
+  margin: 0;
+}
+
+#services article,
+#services aside,
+#services details,
+#services figcaption,
+#services figure,
+#services footer,
+#services header,
+#services hgroup,
+#services main,
+#services menu,
+#services nav,
+#services section,
+#services summary {
+  display: block;
+}
+
+#services audio, #services canvas, #services progress, #services video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+#services audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+#services template {
+  display: none;
+}
+
+#services a {
+  background: transparent;
+}
+
+#services a:active, #services a:hover {
+  outline: 0;
+}
+
+#services abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+#services b, strong {
+  font-weight: bold;
+}
+
+#services dfn {
+  font-style: italic;
+}
+
+#services h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+#services mark {
+  background: #ff0;
+  color: #000;
+}
+
+#services small {
+  font-size: 80%;
+}
+
+#services sub,
+#services sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+#services sup {
+  top: -0.5em;
+}
+
+#services sub {
+  bottom: -0.25em;
+}
+
+#services img {
+  border: 0;
+}
+
+#services svg:not(:root) {
+  overflow: hidden;
+}
+
+#services figure {
+  margin: 1em 40px;
+}
+
+#services hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+#services pre {
+  overflow: auto;
+}
+
+#services code,
+#services kbd,
+#services pre,
+#services samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+#services button, #services input, #services optgroup,
+#services select, #services textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+#services button {
+  overflow: visible;
+}
+
+#services button, #services select {
+  text-transform: none;
+}
+
+#services button,
+#services html input[type="button"],
+#services input[type="reset"],
+#services input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+#services button[disabled],
+#services html input[disabled] {
+  cursor: default;
+}
+
+#services button::-moz-focus-inner,
+#services input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+#services input {
+  line-height: normal;
+}
+
+#services input[type="checkbox"],
+#services input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#services input[type="number"]::-webkit-inner-spin-button,
+#services input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+#services input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+#services input[type="search"]::-webkit-search-cancel-button,
+#services input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+#services fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+#services legend {
+  border: 0;
+  padding: 0;
+}
+
+#services textarea {
+  overflow: auto;
+}
+
+#services optgroup {
+  font-weight: bold;
+}
+
+#services table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#services td, #services th {
+  padding: 0;
+}
+
+/* ===================================================================
+ *  02. basic/base setup styles - (_basic.scss)
+ *
+ * ------------------------------------------------------------------- */
+#services html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#services body {
+  font-weight: normal;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+}
+
+#services body, #services input, #services button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ------------------------------------------------------------------- 
+ * Media - (_basic.scss)
+ * ------------------------------------------------------------------- */
+#services img, #services video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------------------------------- 
+ * Typography resets - (_basic.scss)
+ * ------------------------------------------------------------------- */
+#services div, #services dl, #services dt, #services dd, #services ul, #services ol, #services li, #services h1, #services h2, #services h3, #services h4, #services h5, #services h6, #services pre, #services form, #services p, #services blockquote, #services th, #services td {
+  margin: 0;
+  padding: 0;
+}
+
+#services h1, #services h2, #services h3, #services h4, #services h5, #services h6 {
+  -webkit-font-variant-ligatures: common-ligatures;
+  -moz-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+
+#services em, #services i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+#services strong, #services b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+#services small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+#services ol, #services ul {
+  list-style: none;
+}
+
+#services li {
+  display: block;
+}
+
+/* ------------------------------------------------------------------- 
+ * links - (_basic.scss)
+ * ------------------------------------------------------------------- */
+#services a {
+  text-decoration: none;
+  line-height: inherit;
+}
+
+#services a img {
+  border: none;
+}
+
+/* ------------------------------------------------------------------- 
+ * inputs - (_basic.scss)
+ * ------------------------------------------------------------------- */
+#services fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+#services input[type="email"],
+#services input[type="number"],
+#services input[type="search"],
+#services input[type="text"],
+#services input[type="tel"],
+#services input[type="url"],
+#services input[type="password"],
+#services textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* ===================================================================
+ *  03. grid - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- */
+#services .row {
+  width: 94%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#services .row:before, #services .row:after {
+  content: "";
+  display: table;
+}
+#services .row:after {
+  clear: both;
+}
+
+#services .row .row {
+  width: auto;
+  max-width: none;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+#services [class*="col-"], #services .bgrid {
+  float: left;
+}
+
+#services [class*="col-"] + [class*="col-"].end {
+  float: right;
+}
+
+#services [class*="col-"] {
+  padding: 0 20px;
+}
+
+#services .col-one {
+  width: 8.33333%;
+}
+
+#services .col-two, .col-1-6 {
+  width: 16.66667%;
+}
+
+#services .col-three, .col-1-4 {
+  width: 25%;
+}
+
+#services .col-four, .col-1-3 {
+  width: 33.33333%;
+}
+
+#services .col-five {
+  width: 41.66667%;
+}
+
+#services .col-six, .col-1-2 {
+  width: 50%;
+}
+
+#services .col-seven {
+  width: 58.33333%;
+}
+
+#services .col-eight, #services .col-2-3 {
+  width: 66.66667%;
+}
+
+#services .col-nine, #services .col-3-4 {
+  width: 75%;
+}
+
+#services .col-ten, #services .col-5-6 {
+  width: 83.33333%;
+}
+
+#services .col-eleven {
+  width: 91.66667%;
+}
+
+#services .col-twelve, #services .col-full {
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------- 
+ * small screens - (_grid.scss)
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  #services .row .row {
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+
+  #services [class*="col-"] {
+    padding: 0 18px;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * tablets - (_grid.scss)
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  #services .row {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #services .row .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  #services [class*="col-"] {
+    padding: 0 15px;
+  }
+
+  #services .tab-1-4 {
+    width: 25%;
+  }
+
+  #services .tab-1-3 {
+    width: 33.33333%;
+  }
+
+  #services .tab-1-2 {
+    width: 50%;
+  }
+
+  #services .tab-2-3 {
+    width: 66.66667%;
+  }
+
+  #services .tab-3-4 {
+    width: 75%;
+  }
+
+  #services .tab-full {
+    width: 100%;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * large mobile devices - (_grid.scss)
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  #services .row {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  #services .row .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  #services [class*="col-"] {
+    padding: 0 10px;
+  }
+
+  #services .mob-1-4 {
+    width: 25%;
+  }
+
+  #services .mob-1-2 {
+    width: 50%;
+  }
+
+  #services .mob-3-4 {
+    width: 75%;
+  }
+
+  #services .mob-full {
+    width: 100%;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * small mobile devices - (_grid.scss)
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 400px) {
+  #services .row .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #services [class*="col-"] {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  #services [class*="col-"] + [class*="col-"].end {
+    float: none;
+  }
+}
+/* ===================================================================
+ * block grids - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- */
+#services [class*="block-"]:before, #services [class*="block-"]:after {
+  content: "";
+  display: table;
+}
+#services [class*="block-"]:after {
+  clear: both;
+}
+
+#services .block-1-6 .bgrid {
+  width: 16.66667%;
+}
+
+#services .block-1-4 .bgrid {
+  width: 25%;
+}
+
+#services .block-1-3 .bgrid {
+  width: 33.33333%;
+}
+
+#services .block-1-2 .bgrid {
+  width: 50%;
+}
+
+/**
+ * Clearing for block grid columns. Allow columns with 
+ * different heights to align properly.
+ */
+#services .block-1-6 .bgrid:nth-child(6n+1),
+#services .block-1-4 .bgrid:nth-child(4n+1),
+#services .block-1-3 .bgrid:nth-child(3n+1),
+#services .block-1-2 .bgrid:nth-child(2n+1) {
+  clear: both;
+}
+
+/* ------------------------------------------------------------------- 
+ * small screens - (_grid.scss)
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  #services .block-s-1-6 .bgrid {
+    width: 16.66667%;
+  }
+
+  #services .block-s-1-4 .bgrid {
+    width: 25%;
+  }
+
+  #services .block-s-1-3 .bgrid {
+    width: 33.33333%;
+  }
+
+  #services .block-s-1-2 .bgrid {
+    width: 50%;
+  }
+
+  #services .block-s-full .bgrid {
+    width: 100%;
+    clear: both;
+  }
+
+  #services [class*="block-s-"] .bgrid:nth-child(n) {
+    clear: none;
+  }
+
+  #services .block-s-1-6 .bgrid:nth-child(6n+1),
+  #services .block-s-1-4 .bgrid:nth-child(4n+1),
+  #services .block-s-1-3 .bgrid:nth-child(3n+1),
+  #services .block-s-1-2 .bgrid:nth-child(2n+1) {
+    clear: both;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * tablets - (_grid.scss)
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  #services .block-tab-1-6 .bgrid {
+    width: 16.66667%;
+  }
+
+  #services .block-tab-1-4 .bgrid {
+    width: 25%;
+  }
+
+  #services .block-tab-1-3 .bgrid {
+    width: 33.33333%;
+  }
+
+  #services .block-tab-1-2 .bgrid {
+    width: 50%;
+  }
+
+  #services .block-tab-full .bgrid {
+    width: 100%;
+    clear: both;
+  }
+
+  #services [class*="block-tab-"] .bgrid:nth-child(n) {
+    clear: none;
+  }
+
+  #services .block-tab-1-6 .bgrid:nth-child(6n+1),
+  #services .block-tab-1-4 .bgrid:nth-child(4n+1),
+  #services .block-tab-1-3 .bgrid:nth-child(3n+1),
+  #services .block-tab-1-2 .bgrid:nth-child(2n+1) {
+    clear: both;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * large mobile devices - (_grid.scss)
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  #services .block-mob-1-6 .bgrid {
+    width: 16.66667%;
+  }
+
+  #services .block-mob-1-4 .bgrid {
+    width: 25%;
+  }
+
+  #services .block-mob-1-3 .bgrid {
+    width: 33.33333%;
+  }
+
+  #services .block-mob-1-2 .bgrid {
+    width: 50%;
+  }
+
+  #services .block-mob-full .bgrid {
+    width: 100%;
+    clear: both;
+  }
+
+  #services [class*="block-mob-"] .bgrid:nth-child(n) {
+    clear: none;
+  }
+
+  #services .block-mob-1-6 .bgrid:nth-child(6n+1),
+  #services .block-mob-1-4 .bgrid:nth-child(4n+1),
+  #services .block-mob-1-3 .bgrid:nth-child(3n+1),
+  #services .block-mob-1-2 .bgrid:nth-child(2n+1) {
+    clear: both;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * stack on small mobile devices - (_grid.scss)
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 400px) {
+  #services .stack .bgrid {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* ===================================================================
+ *  04. MISC  - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- */
+ 
+/* Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+#services .group:before, #services .group:after {
+  content: "";
+  display: table;
+}
+#services .group:after {
+  clear: both;
+}
+
+/* Misc Helper Styles 
+ */
+#services .hide {
+  display: none;
+}
+
+#services .invisible {
+  visibility: hidden;
+}
+
+#services .antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#services .overflow-hidden {
+  overflow: hidden;
+}
+
+#services .remove-bottom {
+  margin-bottom: 0;
+}
+
+#services .half-bottom {
+  margin-bottom: 1.5rem !important;
+}
+
+#services .add-bottom {
+  margin-bottom: 3rem !important;
+}
+
+#services .no-border {
+  border: none;
+}
+
+#services .full-width {
+  width: 100%;
+}
+
+#services .text-center {
+  text-align: center;
+}
+
+#services .text-left {
+  text-align: left;
+}
+
+#services .text-right {
+  text-align: right;
+}
+
+#services .pull-left {
+  float: left;
+}
+
+#services .pull-right {
+  float: right;
+}
+
+#services .align-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/* --------------------------------MAINCSS----------------------------------- */
+
+#services html {
+  font-size: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  #services html {
+    font-size: 9.375px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #services html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #services html {
+    font-size: 9.375px;
+  }
+}
+
+#services html, #services body {
+  height: 100%;
+}
+
+#services body {
+  background: #111111;
+  font-family: "librebaskerville-regular", serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: #353535;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------------------------------- 
+ * links - (_document-setup) 
+ * ------------------------------------------------------------------- */
+#services a, #services a:visited {
+  color: #07617d;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#services a:hover, #services a:focus {
+  color: #000000;
+}
+
+
+/* ===================================================================
+ *  03. typography & general theme styles - (_document-setup.scss) 
+ *
+ * ------------------------------------------------------------------- */
+#services h1, #services h2, #services h3, #services h4, #services h5, #services h6,
+#services .h01, #services .h02, #services .h03, #services .h04, #services .h05, #services .h06 {
+  font-family: "montserrat-bold", sans-serif;
+  color: #151515;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 2.1rem;
+}
+
+#services h3, #services .h03, #services h4, #services .h04 {
+  margin-bottom: 1.8rem;
+}
+
+#services h5, #services .h05, #services h6, #services .h06 {
+  margin-bottom: 1.2rem;
+}
+
+#services h1, #services .h01 {
+  font-size: 3.1rem;
+  line-height: 1.35;
+  letter-spacing: -.1rem;
+}
+@media only screen and (max-width: 600px) {
+  #services h1, #services .h01 {
+    font-size: 2.6rem;
+    letter-spacing: -.07rem;
+  }
+}
+
+#services h2, #services .h02 {
+  font-size: 2.4rem;
+  line-height: 1.25;
+}
+
+#services h3, #services .h03 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+#services h4, #services .h04 {
+  font-size: 1.7rem;
+  line-height: 1.76;
+}
+
+#services h5, #services .h05 {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+#services h6, #services .h06 {
+  font-size: 1.3rem;
+  line-height: 1.85;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+#services p img {
+  margin: 0;
+}
+
+#services p.lead {
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #4f4f4f;
+  margin-bottom: 3.6rem;
+}
+@media only screen and (max-width: 768px) {
+  #services p.lead {
+    font-size: 1.8rem;
+  }
+}
+
+#services em, #services i, #services strong, #services b {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#services em, #services i {
+  font-family: "librebaskerville-italic", serif;
+}
+
+#services strong, #services b {
+  font-family: "librebaskerville-bold", serif;
+}
+
+#services small {
+  font-size: 1.1rem;
+  line-height: inherit;
+}
+
+#services blockquote {
+  margin: 3rem 0;
+  padding-left: 5rem;
+  position: relative;
+}
+
+#services blockquote:before {
+  content: "\201C";
+  font-size: 10rem;
+  line-height: 0px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: arial, sans-serif;
+  position: absolute;
+  top: 3.6rem;
+  left: 0;
+}
+
+#services blockquote p {
+  font-family: "librebaskerville-italic", georgia, serif;
+  font-style: italic;
+  padding: 0;
+  font-size: 1.9rem;
+  line-height: 1.895;
+}
+
+#services blockquote cite {
+  display: block;
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 1.615;
+}
+
+#services blockquote cite:before {
+  content: "\2014 \0020";
+}
+
+#services blockquote cite a,
+#services blockquote cite a:visited {
+  color: #4f4f4f;
+  border: none;
+}
+
+#services abbr {
+  font-family: "librebaskerville-bold", serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: .05rem;
+  color: #4f4f4f;
+}
+
+#services var, #services kbd, #services samp, #services code, #services pre {
+  font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+}
+
+#services pre {
+  padding: 2.4rem 3rem 3rem;
+  background: #F1F1F1;
+}
+
+#services code {
+  font-size: 1.4rem;
+  margin: 0 .2rem;
+  padding: .3rem .6rem;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 3px;
+}
+
+#services pre > #services code {
+  display: block;
+  white-space: pre;
+  line-height: 2;
+  padding: 0;
+  margin: 0;
+}
+
+#services pre.prettyprint > #services code {
+  border: none;
+}
+
+#services del {
+  text-decoration: line-through;
+}
+
+#services abbr[title], #services dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+#services mark {
+  background: #FFF49B;
+  color: #000;
+}
+
+#services hr {
+  border: solid #d2d2d2;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 2.4rem 0 1.5rem;
+  height: 0;
+}
+
+/* ------------------------------------------------------------------- 
+ * Lists - (_document-setup.scss)  
+ * ------------------------------------------------------------------- */
+#services ol {
+  list-style: decimal;
+}
+
+#services ul {
+  list-style: disc;
+}
+
+#services li {
+  display: list-item;
+}
+
+#services ol, #services ul {
+  margin-left: 1.7rem;
+}
+
+#services ul li {
+  padding-left: .4rem;
+}
+
+#services ul ul, #services ul ol,
+#services ol ol, #services ol ul {
+  margin: .6rem 0 .6rem 1.7rem;
+}
+
+#services ul.disc li {
+  display: list-item;
+  list-style: none;
+  padding: 0 0 0 .8rem;
+  position: relative;
+}
+#services ul.disc li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #07617d;
+  position: absolute;
+  left: -17px;
+  top: 11px;
+  vertical-align: middle;
+}
+
+#services dt {
+  margin: 0;
+  color: #07617d;
+}
+
+#services dd {
+  margin: 0 0 0 2rem;
+}
+
+/* ------------------------------------------------------------------- 
+ * Spacing - (_document-setup)  
+ * ------------------------------------------------------------------- */
+#services button, #services .button {
+  margin-bottom: 1.2rem;
+}
+
+#services fieldset {
+  margin-bottom: 1.5rem;
+}
+
+#services input,
+#services textarea,
+#services select,
+#services pre,
+#services blockquote,
+#services figure,
+#services table,
+#services p,
+#services ul,
+#services ol,
+#services dl,
+#services form,
+#services .fluid-video-wrapper,
+#services .ss-custom-select {
+  margin-bottom: 3rem;
+}
+
+/* ------------------------------------------------------------------- 
+ * floated image - (_document-setup)  
+ * ------------------------------------------------------------------- */
+#services img.pull-right {
+  margin: 1.5rem 0 0 3rem;
+}
+
+#services img.pull-left {
+  margin: 1.5rem 3rem 0 0;
+}
+
+/* ------------------------------------------------------------------- 
+ * block grids paddings
+ * ------------------------------------------------------------------- */
+#services .bgrid {
+  padding: 0 20px;
+}
+@media only screen and (max-width: 1024px) {
+  #services .bgrid {
+    padding: 0 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #services .bgrid {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #services .bgrid {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #services .bgrid {
+    padding: 0;
+  }
+}
+
+/* ------------------------------------------------------------------- 
+ * tables - (_document-setup.scss)  
+ * ------------------------------------------------------------------- */
+#services table {
+  border-width: 0;
+  width: 100%;
+  max-width: 100%;
+  font-family: "librebaskerville-regular", sans-serif;
+}
+
+#services th,
+#services td {
+  padding: 1.5rem 3rem;
+  text-align: left;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+#services th {
+  color: #151515;
+  font-family: "montserrat-bold", sans-serif;
+}
+
+#services td {
+  line-height: 1.5;
+}
+
+#services th:first-child,
+#services td:first-child {
+  padding-left: 0;
+}
+
+#services th:last-child,
+#services td:last-child {
+  padding-right: 0;
+}
+
+#services .table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ------------------------------------------------------------------- 
+ * pace.js styles - minimal  - (_document-setup.scss)
+ * ------------------------------------------------------------------- */
+#services .pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+#services .pace-inactive {
+  display: none;
+}
+
+#services .pace .pace-progress {
+  background: #f9a828;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 6px;
+}
+
+
+
+/* ===================================================================
+*  12. services - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
+#services {
+ background-color: #19191b;
+ background-image: url(../images/services-bg2.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ background-size: cover;
+ min-height: 800px;
+ position: relative;
+ padding: 15rem 0 15rem;
+ color: rgba(255, 255, 255, 0.3);
+}
+#services .overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(5, 5, 5, 0.8);
+}
+#services .gradient-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ opacity: .4;
+ background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+ background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
+}
+#services .section-intro h3 {
+ color: rgba(242, 242, 242, 0.5);
+}
+#services .section-intro h1 {
+ color: #FFFFFF;
+}
+#services .section-intro .lead {
+ color: rgba(242, 242, 242, 0.4);
+}
+#services .services-content {
+ text-align: center;
+ max-width: 1040px;
+}
+#services .services-list {
+ margin-top: 1.2rem;
+ text-align: center;
+}
+#services .services-list .service-item {
+ margin-bottom: 3rem;
+ padding: 0 50px;
+}
+#services .services-list .service-item p {
+ color: rgba(242, 242, 242, 0.5);
+}
+#services .services-list .icon {
+ display: inline-block;
+ margin-bottom: 1.5rem;
+}
+#services .services-list .icon i {
+ font-size: 5.4rem;
+ color: #f9a828;
+}
+#services .services-list .h05 {
+ font-size: 1.7rem;
+ line-height: 1.765;
+ color: #FFFFFF;
+ margin-bottom: 3rem;
+}
+
+/* ------------------------------------------------------------------- 
+* responsive:
+* services
+* ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+ #services .services-list .service-item {
+   padding: 0 40px;
+ }
+}
+@media only screen and (max-width: 900px) {
+ #services .services-list .service-item {
+   padding: 0 30px;
+ }
+}
+@media only screen and (max-width: 768px) {
+ #services {
+   padding: 12rem 0 12rem;
+ }
+ #services .services-content {
+   max-width: 550px;
+ }
+ #services .services-list .service-item {
+   padding: 0 15px;
+ }
+ #services .services-list .icon i {
+   font-size: 5.1rem;
+ }
+}
+@media only screen and (max-width: 600px) {
+ #services .services-list .service-item {
+   padding: 0 10px;
+ }
+ #services .services-list .icon i {
+   font-size: 5rem;
+ }
+}
+@media only screen and (max-width: 400px) {
+ #services .services-list .service-item {
+   padding: 0;
+ }
+}
+
+/* ===================================================================
+*  08. common and reusable styles 
+*
+* ------------------------------------------------------------------- */
+#services .section-intro {
+ text-align: center;
+ position: relative;
+ margin-bottom: 1.5rem;
+}
+#services .section-intro h1 {
+ font-family: "librebaskerville-bold", serif;
+ font-size: 4.8rem;
+ line-height: 1.375;
+ color: #151515;
+}
+#services .section-intro h3 {
+ font-family: "montserrat-bold", sans-serif;
+ font-size: 1.8 rem;
+ line-height: 1.667;
+ color: rgba(242, 242, 242, 0.5);
+ text-transform: uppercase;
+ letter-spacing: .3rem;
+ margin-bottom: 1.2rem;
+}
+#services .section-intro .lead {
+ font-family: "montserrat-regular", sans-serif;
+ font-size: 1.8;
+ line-height: 1.833;
+}
+#services .section-intro.with-bottom-sep {
+ padding-bottom: 4.2rem;
+ position: relative;
+}
+#services .section-intro.with-bottom-sep::after {
+ display: inline-block;
+ height: 1px;
+ width: 200px;
+ background-color: rgba(242, 242, 242, 0.1);
+ text-align: center;
+}
+
+#services .col-full h1 {
+ color: #FFFFFF;
+}

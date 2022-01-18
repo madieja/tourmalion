@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tourmalion &mdash; Kacamata Theraphy</title>
+    <meta name="description" content="">  
+	  <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Icons -->
+    <!-- <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" /> -->
+    <link rel="stylesheet" href="css/vendor/icomoon.css">
+    <link rel="stylesheet" href="css/vendor/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+   
+    <link rel="stylesheet" href="css/vendor/micromodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="css/compiledscss.css">
+
+    <!-- Script -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+
+
+
+<body>
+     <!-- Suscribe Modal -->
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+  
+              <div id="suscribeform">
+  
+                  <div class="inner">
+                    <div class="image-holder">
+                      <img src="img/test.jpg" alt="tourmalion">
+                    </div>
+                    <form action="">
+                      <h3 class="mb-1">Suscribe Sekarang !</h3>
+                      <p class="text-center">dan dapatkan <strong>Diskon</strong> Menarik </p>
+                      <br>
+                      <div class="form-wrapper">
+                        <label>Name</label>
+                        <input type="text" placeholder="(Required)" class="form-control" required>
+                        <i class="zmdi zmdi-account"></i>
+                      </div>
+                      <div class="form-wrapper">
+                        <label>Email</label>
+                        <input type="email" placeholder="(Required)" class="form-control" required>
+                        <i class="zmdi zmdi-email"></i>
+                      </div>
+                      <div class="form-wrapper">
+                        <label>Kota Tempat Tinggal</label>
+                        <input type="text" placeholder="" class="form-control">
+                        <i class="zmdi zmdi-city"></i>
+                      </div>
+                      <div class="form-wrapper">
+                        <label>No Telepon</label>
+                        <input type="number" max="9999999999999" placeholder="" class="form-control">
+                        <i class="zmdi zmdi-smartphone"></i>
+                      </div>
+                      <button>Register
+                        <i class="zmdi zmdi-arrow-right"></i>
+                      </button>
+                    </form>
+                  </div>
+            
+                </div>
+  
+            </div>
+			
+            <button class="modal__close close" aria-label="Close modal" data-micromodal-close></button>
+        </div>
+    </div>
+
+  <!-- Dummy Popup -->
+    <div id="dummypopup">
+      </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="wa-float">
+      <a href="https://wa.me/628196060496?text=Hai%20saya%20tertarik%20untuk%20membeli%20kacamata%20tourmalion" target="_blank">
+        <i class="icon-whatsapp my-float"></i>
+        </a>
+    </div>
+
+    <!-- Offcanvas menu drawer -->
+    <nav class="drawer-container">
+      <a href="#" class="close-button" title="close"><span>Close</span></a>	
+
+      <h3>Tourmalion.</h3>  
+
+      <ul class="nav-list">
+          <li class="current"><a href="#hero" title="">Home</a></li>
+          <li><a href="#products" title="">Products</a></li>
+          <li><a href="#hero" title="">Shop</a></li>
+          <li><a href="#services" title="">Specification</a></li>
+          <li><a href="#contactform" title="">Contact</a></li>						
+       </ul>			
+
+      <ul class="header-social-list">
+          <li class=""><a href="https://wa.me/628196060496?text=Hai%20saya%20tertarik%20untuk%20membeli%20kacamata%20tourmalion"><span class="icon-whatsapp"></span></a></li>
+          <li class=""><a href="https://www.instagram.com/tourmalion.official/"><span class="icon-instagram"></span></a></li>    
+      </ul>		
+   </nav> 
+
+    <!-- Header  -->
+    <header>
+        <div class="main-nav container">
+            <div class="site-logo">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.png" alt="Homepage">
+                    <h4 class="text-tourmalion">Tourmalion</h4>
+                </a>
+            </div>
+            <nav class="primary-nav d-none d-lg-block">
+                <ul class="w-100">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#hero">Shop</a></li>
+                    <li><a href="#services">Specification</a></li>
+                    <li><a href="#ourteam">Our Team</a></li>
+                    <li><a href="#contactform">Contact</a></li>
+                </ul>
+            </nav>
+            <ul class="socialbtn d-none d-lg-flex">
+                <li class=""><a href="https://wa.me/628196060496?text=Hai%20saya%20tertarik%20untuk%20membeli%20kacamata%20tourmalion"><span class="icon-whatsapp"></span></a></li>
+				<li class=""><a href="https://www.instagram.com/tourmalion.official/"><span class="icon-instagram"></span></a></li>   
+            </ul>
+            <a class="header-menu-trigger ml-auto d-block d-lg-none" href="#">
+                <span class="header-menu-icon"></span>
+            </a> 
+        </div>
+        <div class="sticky-nav">
+                <div class="main-nav container">
+                        <div class="site-logo">
+                            <a class="logo" href="index.html">
+                                <img src="img/logo.png" alt="Homepage">
+                                <h4 class="text-tourmalion">Tourmalion</h4>
+                            </a>
+                        </div>
+                        <a class="ml-auto header-menu-trigger d-block" href="#">
+                            <span class="header-menu-icon"></span>
+                        </a>
+                </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="bg-dark">
+       <div class="hero-carousel w-100 h-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-dark" style="background-image: url('img/hero-bg2.jpg')">
+                    <div class="overlay"></div>
+                    <div class="swiper-slide-content container">
+                        <div class="row">
+                            <div class="col-12">
+                            <h3 class="text-center">Tourmalion</h3>
+                            <h1 class="text-center text-white">Stylish<br>Therapy Glasses.</h1>
+                            <div class="text-center mt-5"><a class="button button-primary" href="#aboutproducts">Learn More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-dark" style="background-image: url('img/hero-bg.jpg')">
+                        <div class="overlay"></div>
+                        <div class="swiper-slide-content container">
+                            <div class="row">
+                                <div class="col-12">
+                                <h3 class="text-center">Tourmalion</h3>
+                                <h1 class="text-center text-white">100% Pure<br>Vegetable Leather</h1>
+                                <div class="text-center mt-5"><a class="button button-primary" href="#aboutproducts">Learn More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="swipper-arrow">
+                <div class="next"><a href="#">next</a></div>
+                <div class="prev"><a href="#">prev</a></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Our Products (Modist raw) -->
+    <section id="products" class="product-container bg-light thisisbg mb-0 ">
+      <div class="container">
+        <div class="row justify-content-center mb-3 pb-3">
+          <div data-aos="fade-up" class="col-md-12 heading-section text-center">
+            <h1 class="big">Products</h1>
+            <h2 class="">Our Products</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm col-md-6">
+            <div data-aos="fade-right" data-aos-offset="200" class="product bxshadow">
+              <div href="#" class="img-prod"><img class="img-fluid" src="img/product-2.jpg" alt="Tourmalion"></div>
+              <div class="text py-3 px-3">
+                <h3><a href="#">Tourmalion Sparta</a></h3>
+                <hr>
+                <div class="d-flex">
+                  <div class="pricing w-100">
+					<p class="price price-diskon" style="text-decoration:line-through;font-style:italic;"><span>RP.3.500.000</span></p>
+                    <p class="price" style="font-weight:bold"><strong>RP.1.700.000</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm col-md-6">
+            <div data-aos="fade-left" data-aos-offset="200" class="product bxshadow">
+              <a href="#" class="img-prod"><img class="img-fluid bg-position-center" src="img/product-1.jpg" alt="Tourmalion"></a>
+              <div class="text py-3 px-3">
+                <h3><a href="#">Tourmalion Medea</a></h3>
+                <hr>
+                <div class="d-flex">
+                  <div class="pricing w-100">
+					<p class="price price-diskon" style="text-decoration:line-through;font-style:italic;"><span>RP.3.500.000</span></p>
+                    <p class="price" style="font-weight:bold"><strong>RP.1.700.000</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Products (camille raw) -->
+    <section id="aboutproducts" class="thisisbg  pt-0 mt-0 bg-light">
+			<div class="container">
+				<div class="row align-items-center">
+					<div data-aos="fade-right" data-aos-offset="200" class="col-md-6">
+
+            <div class="swiper-container aboutproduct-carousel w-100">
+              <div class="swiper-wrapper w-100">
+                <div class="swiper-slide" style="background-image: url(img/jonas1.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(img/jonas2.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(img/jonas3.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(img/jonas4.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(img/jonas5.jpeg);"></div>
+              </div>
+            </div>
+					</div>
+					<div data-aos="fade-left" data-aos-offset="200" class="col-md-6 py-md-5 pb-5 wrap-about pb-md-5">
+	          <div class="heading-section mb-4 mt-md-5">
+	          	<h1 class="big">About</h1>
+	          	<span class="subheading">Our Product</span>
+	            <h2 class="mb-5">Tourmalion <strong>MPG</strong></h2>
+	          </div>
+	          <div class="pb-md-5">
+							<p> <strong>Tourmalion MPG</strong> adalah kacamata multi purpose glass Kacamata terapi kesehatan mata dengan perpaduan gaya yang modern. </p>
+							<p> Framenya terbuat dari 100% vegetable leather, dilengkapi 6 batu tourmaline dengan energi Anion yang sangat besar. .Selain itu, terdapat pula 3 batu Germanium, 4 batu far infra red.</p>
+							<p> Kacamata Tourmalion juga menggunakan fitur lensa photocromic grey yang dapat melindungi mata anda dari sinar berbahaya.</p>
+							<p> Menggunakan kacamata Tourmalion MPG dapat mengatasi gangguan mata, meningkatkan imunitas, melancarkan peredaran darah, dan meningkatkan asupan oksigen.</p> 
+							<p> Kacamata Tourmalion MPG... berteknology tinggi, modern,ringan sangat nyaman dipakai.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+    </section>
+
+    <section id="vidplay" class="img overflow-hidden" style="">
+      <!-- <video loop muted autoplay>
+          <source src="img/video/video.mp4" type="video/mp4">
+          <source src="img/video/video.webm" type="video/webm">
+          <source src="https://drive.google.com/uc?export=download&id=1s8VJOWWVyfhLV3PHZib5uoqGNT05ZuTJ" type='video/mp4'>
+       </video> -->
+       <div class="vidplay-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide item" style="background-image: url(img/vid-1.jpg)"></div>
+          <div class="swiper-slide item" style="background-image: url(img/vid-2.jpg)"></div>
+          <div class="swiper-slide item" style="background-image: url(img/vid-3.jpg)"></div>
+        </div>
+       </div>
+      <div class="overlay"></div>
+      <div data-aos="fade-up" data-aos-offset="400" class="container h-100">
+        <div class="row h-100 align-content-center align-items-center justify-content-center mb-3 pb-3">
+          <div class="col-md-12 text-center">
+            <h1>Watch our video</h1>
+          </div>
+          <div class="col-md-12 w-100 d-flex justify-content-center">
+            <a target="_blank" href="https://youtube.com"
+              class="icon popup-vimeo d-flex justify-content-center align-items-center">
+              <span class="icon-play"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoni" class="ftco-section testimony-section bg-light py-5">
+        <div class="container">
+          <div class="row justify-content-center pb-3">
+            <div data-aos="fade-up" data-aos-offset="200" class="col-md-10 heading-section text-center">
+              <h1 class="big">Testimony</h1>
+              <span class="subheading">TOURMALION</span>
+              <h2 class="mb-4">Testimony</h2>
+            </div>
+          </div>
+        </div>
+          <div data-aos="fade-up" data-aos-offset="200" class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+              <div class="row testi-navigation d-none d-md-flex">
+                <!-- <span class="testi-prev icon-arrow_back"></span> -->
+                <!-- <span class="testi-next icon-arrow_forward"></span> -->
+              </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-12">
+                  <div class="testimony-swiper swiper-container">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide item">
+                        <div class="testimony-wrap w-100">
+                          <div class="quote d-flex align-items-center justify-content-center">
+                            <i class="icon-quote-left"></i>
+                          </div>
+                          <div class="text text-center">
+                            <strong><p class="mb-4">Kacamanya enak dipakai, designnya juga bagus
+                              , meskipun kacamata untuk therapy, tapi cocok untuk dipakai harian.</p></strong>
+                            <h2 class="name">Citra</h2>
+                            <p class="position">Customer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide item ">
+                        <div class="testimony-wrap w-100">
+                          <div class="quote d-flex align-items-center justify-content-center">
+                            <i class="icon-quote-left"></i>
+                          </div>
+                          <div class="text text-center">
+                              <strong><p class="mb-4">Bahan kacamatanya unik, nyaman di pakai dan designnya gak norak.
+                              Untuk designer nya, "Good job".</p></strong>
+                            <h2 class="name">Rudy</h2>
+                            <p class="position">Customer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide item ">
+                        <div class="testimony-wrap w-100">
+                          <div class="quote d-flex align-items-center justify-content-center">
+                            <i class="icon-quote-left"></i>
+                          </div>
+                          <div class="text text-center">
+                            <strong><p class="mb-4">After all, saya gak nyesel beli kacamata ini, selain designnya yang keren
+                              dan bahannya yang unik, fungsi dari batu nya juga aku suka. Thank untuk kacamatanya
+                              tourmalion.</p></strong>
+                            <h2 class="name">Haikal</h2>
+                            <p class="position">Customer</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+    <section id="services" class="thisisbg" style="background-image: url(img/services-bg2.jpg)">
+   	<div class="overlay"></div> 	
+   	<div class="row narrow section-intro with-bottom-sep">
+   		<div data-aos="fade-up" data-aos-offset="200" class="col-full heading-section">
+   			
+   				<span class="subheading mb-4">Tourmalion</span>
+   			   <h2 class="text-white">Spesifikasi</h2>		
+   			   <p class="text-white services-judul-p">Tourmalion MPG adalah kacamata multi purpose glass. Kacamata terapi kesehatan mata dengan perpaduan gaya yang modern. Menggunakan kacamata Tourmalion MPG dapat mengatasi gangguan mata, meningkatkan imunitas, melancarkan peredaran darah, dan meningkatkan asupan oksigen. </p>
+   			
+   	   </div> <!-- end col-full -->
+     </div> <!-- end row -->
+   	<div class="row services-content">
+
+   		<div class="services-list block-1-2 block-tab-full group">
+	      <div data-aos="fade-up" data-aos-offset="200" class="bgrid service-item">	        
+	            <div class="service-content">
+					<div class="w-100 d-flex justify-content-center align-content-center mb-5" style="min-height:8em;">
+						<div class="bg-style-default icon-service" style="background-image: url(img/tourmalion-leather.jpg);"></div>
+					</div>
+                    <h3 class="h05">Terobosan terbaru menggunakan 100% vegetable leather</h3>
+		            <p>Tourmalion MPG memakai bahan 100% Vegetable sebagai bahan utama dan sebagian besar bersumber dari AS karena kami bertujuan untuk kulit dengan aroma yang kaya dan konsistensi yang luar biasa dalam kualitas
+	         		</p>	         		
+	         	</div> 	         	 
+				</div> <!-- end bgrid -->
+
+				<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" class="bgrid service-item">	                      
+	            <div class="service-content">	
+	            	<div class="w-100 d-flex justify-content-center align-content-center mb-5" style="min-height:8em;">
+						<div class="bg-style-default icon-service" style="background-image: url(img/tourmalion-stone.jpeg);"></div>
+					</div>
+					<h3 class="h05">Manfaat batu Tormaline, Far-Infrared, dan Germanium</h3>  
+		            <p>Dilengkapi 6 batu tourmaline yang dapat memancarkan ion negatif yang sangat baik untuk kesehatan mata.
+                  terdapat 3 batu Germanium yang bermanfaat untuk meningkatkan sistem kekebalan tubuh, meningkatkan pasokan oksigen tubuh, serta menghancurkan radikal bebas.
+	         		</p>	         		
+	            </div>	                          
+
+			   </div> <!-- end bgrid -->
+
+			   <div data-aos="fade-up" data-aos-offset="" data-aos-delay="400" class="bgrid service-item">          
+	            <div class="service-content">
+	            	<div class="w-100 d-flex justify-content-center align-content-center mb-5" style="min-height:8em;">
+						<div class="bg-style-default icon-service" style="background-image: url(img/tourmalion-lense.jpeg);"></div>
+					</div>
+					<h3 class="h05">Lensa photo grey Multifungsi</h3>
+		            <p>Kacamata Tourmalion juga menggunakan fitur lensa photocromic grey yang dapat melindungi mata anda dari sinar berbahaya. 
+	        			</p>
+	            </div> 	            	               
+
+			   </div> <!-- end bgrid -->
+
+				<div data-aos="fade-up" data-aos-offset="" data-aos-delay="600" class="bgrid service-item">        
+	            <div class="service-content">
+					<div class="w-100 d-flex justify-content-center align-content-center mb-5" style="min-height:8em;">
+						<div class="bg-style-default icon-service" style="background-image: url(img/tourmalion-full.jpeg);"></div>
+					</div>
+					<h3 class="h05">Inovatif, Stylish, Fashionable</h3>
+		            <p>Kacamata Tourmalion MPG berteknology tinggi, modern,ringan sangat nyaman dipakai
+	         		</p>	         		
+	            </div>                
+
+				</div> <!-- end bgrid -->			   
+
+	      </div> <!-- end services-list -->
+   		
+   	</div> <!-- end services-content -->   			
+
+   </section> 
+
+    <!-- OurTeam  -->
+    <section id="ourteam" class="thisisbg bg-light overflow-hidden">
+        <div class="container">
+          <div class="row justify-content-center pb-5">
+            <div data-aos="fade-up" data-aos-offset="200" class="col-md-10 heading-section text-center">
+              <h1 class="big">Team</h1>
+              <span class="subheading">Best from the best</span>
+              <h2 class="mb-4">Our Team</h2>
+              <p>Meet our greatest team !</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div data-aos="fade-up" class="col-sm col-md-4 my-3">
+                  <div class="team text-center">
+                    <div class="img" style="background-image: url(https://cdn1.iconfinder.com/data/icons/main-ui-elements-with-colour-bg/512/male_avatar-512.png);"></div>
+                    <h2>Syarif Anis</h2>
+                    <strong><span class="position">CEO</span></strong>
+                    <div class="team-social-list mt-3">
+						<li style="font-size: smaller;"><span style="margin-right: 0.5em;" class="icon icon-envelope"></span><a href="mailto:syarif@tourmalion.com"><span class="text">syarif@tourmalion.com</span></a></li>
+                    </div>
+                  </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" class="col-sm col-md-4 my-3">
+                  <div class="team text-center">
+                    <div class="img" style="background-image: url(https://cdn1.iconfinder.com/data/icons/main-ui-elements-with-colour-bg/512/male_avatar-512.png);"></div>
+                    <h2>Selin Syarif </h2>
+                    <strong><span class="position">Finance Director</span></strong>
+                    <div class="team-social-list mt-3">
+						<li style="font-size: smaller;"><span style="margin-right: 0.5em;" class="icon icon-envelope"></span><a href="mailto:selin@tourmalion.com"><span class="text">selin@tourmalion.com</span></a></li>
+                    </div>
+                  </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="400" class="col-sm col-md-4 my-3">
+                  <div class="team text-center">
+                    <div class="img" style="background-image: url(https://cdn1.iconfinder.com/data/icons/main-ui-elements-with-colour-bg/512/male_avatar-512.png);"></div>
+                    <h2>Welly</h2>
+                    <strong><span class="position">Riset and Development</span></strong>
+                    <div class="team-social-list mt-3">
+						<li style="font-size: smaller;"><span style="margin-right: 0.5em;" class="icon icon-envelope"></span><a href="mailto:welly@tourmalion.com"><span class="text">welly@tourmalion.com</span></a></li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+  <!-- Contact  -->
+    <section id="contactform" class="thisisbg contact-section" style="background-color: #fff">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-delay="100" class="row justify-content-center pb-5">
+              <div class="col-md-10 heading-section text-center">
+                <h1 class="big">Contact</h1>
+                <span class="subheading">TOURMALION</span>
+                <h2 class="mb-4">Contact Us</h2>
+                <p>Kirimkan kami pesan</p>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+          <div class="row block-9">
+          <div data-aos="fade-right" data-aos-delay="100" class="col-md-6 order-md-last d-flex">
+            <form action="#" class="bg-white p-5 contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="button button-primary mt-3 py-3 px-5">Send Message</button>
+            </div>
+            </form>
+          
+          </div>
+      
+          <div data-aos="fade-left" data-aos-delay="100" class="col-md-6 d-flex">
+            <div class="w-100 h-100">
+              <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=metro%20trade%20centre%20blok%20f7&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer  -->
+    <footer>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo">Tourmalion</h2>
+              <p>Tourmalion MPG memakai bahan 100% Vegetable sebagai bahan utama dan sebagian besar bersumber dari AS karena demi menjaga aroma yang kaya dan konsistensi yang luar biasa dalam kualitas.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <!-- <li class=""><a href="#"><span class="icon-twitter"></span></a></li> -->
+                <li class=""><a href="https://wa.me/628196060496?text=Hai%20saya%20tertarik%20untuk%20membeli%20kacamata%20tourmalion"><span class="icon-whatsapp"></span></a></li>
+                <li class=""><a href="https://www.instagram.com/tourmalion.official/"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#hero" class="py-2 d-block">FAQs</a></li>
+                <li><a href="#hero" class="py-2 d-block">Privacy</a></li>
+                <li><a href="#hero" class="py-2 d-block">Terms Condition</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#hero" class="py-2 d-block">Home</a></li>
+                <li><a href="#products" class="py-2 d-block">Products</a></li>
+                <li><a href="#hero" class="py-2 d-block">Shop</a></li>
+                <li><a href="#services" class="py-2 d-block">Specification</a></li>
+                <li><a href="#contactform" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Jalan MTC Raya no 1234</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(+62)819 606 0496</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@tourmalion.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center py-5">
+
+          <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Tourmalion</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/micromodal-traspiled.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+</body>
+</html>
